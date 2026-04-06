@@ -1,5 +1,6 @@
 import { useState } from "react";
 import FactionCard from "./FactionCard";
+import streetBg from "@/assets/street-bg.jpg";
 import ghoulImg from "@/assets/ghoul-faction.jpg";
 import ccgImg from "@/assets/ccg-faction.jpg";
 
@@ -18,6 +19,14 @@ const FactionSelect = ({ username, onFactionSelect }: FactionSelectProps) => {
 
   return (
     <div className={`fixed inset-0 z-40 flex flex-col bg-background transition-opacity duration-500 ${selected ? "opacity-0" : "opacity-100"}`}>
+      {/* Street background */}
+      <img
+        src={streetBg}
+        alt=""
+        className="absolute inset-0 h-full w-full object-cover opacity-20 pointer-events-none"
+        aria-hidden="true"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/60 pointer-events-none" />
       {/* Header */}
       <div className="relative z-20 flex flex-col items-center py-6 animate-slide-up">
         <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
