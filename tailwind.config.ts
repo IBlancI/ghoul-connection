@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        display: ['"Bebas Neue"', 'sans-serif'],
+        sans: ['Inter', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -47,6 +51,15 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        ghoul: {
+          red: "hsl(var(--ghoul-red))",
+          glow: "hsl(var(--ghoul-red-glow))",
+        },
+        ccg: {
+          blue: "hsl(var(--ccg-blue))",
+          white: "hsl(var(--ccg-white))",
+        },
+        blood: "hsl(var(--blood))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
