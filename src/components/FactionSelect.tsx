@@ -1,5 +1,6 @@
 import { useState } from "react";
 import FactionCard from "./FactionCard";
+import streetBg from "@/assets/street-bg.jpg";
 import ghoulImg from "@/assets/ghoul-faction.jpg";
 import ccgImg from "@/assets/ccg-faction.jpg";
 
